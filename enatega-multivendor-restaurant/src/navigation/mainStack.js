@@ -47,7 +47,7 @@ export default function MainStack() {
         new Date(),
         'seconds'
       )
-      var remainingTime = moment(new Date(order.createdAt))
+      let remainingTime = moment(new Date(order.createdAt))
         .add(MAX_TIME, 'seconds')
         .diff(new Date(), 'seconds')
 

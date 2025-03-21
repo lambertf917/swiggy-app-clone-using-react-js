@@ -91,9 +91,9 @@ const GoogleMapsLoader = ({
         onMessage(messaging, function (payload) {
           // Customize notification here
           const { title, body } = payload.notification;
-          var localizedBody = body;
-          var orderNo = "";
-          var localizedTitle = title;
+          const localizedBody = body;
+          let orderNo = "";
+          let localizedTitle = title;
           const createMessage = (orderNo, localizedTitle, localizedBody) => {
             return i18n.language === "ar"
               ? `${orderNo} ${localizedTitle} ${localizedBody}`
