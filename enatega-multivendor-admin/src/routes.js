@@ -56,7 +56,7 @@ import SuperAdminDashboard from './views/SuperAdminDashboard'
 import Cuisines from './views/Cuisines'
 // import Banners from './views/Banners'
 
-var routes = [
+let routes = [
   {
     path: '/dashboard',
     name: 'Home',

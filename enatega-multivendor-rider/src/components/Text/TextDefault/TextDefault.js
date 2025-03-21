@@ -12,7 +12,7 @@ function TextDefault(props) {
     textStyles.Regular,
     textStyles.Normal
   ])
-  var customStyles = [defaultStyle]
+  let customStyles = [defaultStyle]
 
   if (props.bold) customStyles.push(textStyles.Bold)
   if (props.bolder) customStyles.push(textStyles.Bolder)

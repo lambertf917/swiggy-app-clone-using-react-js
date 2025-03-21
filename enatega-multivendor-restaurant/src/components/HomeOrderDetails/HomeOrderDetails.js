@@ -29,7 +29,7 @@ function HomeOrderDetails(props) {
   const acceptanceTime = moment(date).diff(timeNow, 'seconds')
   // current
   const createdTime = new Date(createdAt)
-  var remainingTime = moment(createdTime)
+  const remainingTime = moment(createdTime)
     .add(MAX_TIME, 'seconds')
     .diff(timeNow, 'seconds')
   const configuration = useContext(Configuration.Context)

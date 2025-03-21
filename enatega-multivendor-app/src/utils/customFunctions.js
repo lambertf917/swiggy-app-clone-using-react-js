@@ -1,9 +1,9 @@
 import { ORDER_STATUS_ENUM } from './enums'
 
 function calculateDistance(latS, lonS, latD, lonD) {
-  var R = 6371 // km
-  var dLat = toRad(latD - latS)
-  var dLon = toRad(lonD - lonS)
+  let R = 6371 // km
+  const dLat = toRad(latD - latS)
+  const dLon = toRad(lonD - lonS)
   var lat1 = toRad(latS)
   var lat2 = toRad(latD)
 

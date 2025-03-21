@@ -39,7 +39,7 @@ export default function SelectLanguage() {
   const languageTypes = [
     { value: 'English', code: 'en', index: 0 },
     { value: 'français', code: 'fr', index: 1 },
-    { value: 'ភាសាខ្មែរ', code: 'km', index: 2 },
+    { value: 'ភាសា�្មែរ', code: 'km', index: 2 },
     { value: '中文', code: 'zh', index: 3 },
     { value: 'Deutsche', code: 'de', index: 4 },
     { value: 'arabic', code: 'ar', index: 5 },
@@ -55,7 +55,7 @@ export default function SelectLanguage() {
 
     await AsyncStorage.setItem('enatega-language', language)
 
-    var lang = await AsyncStorage.getItem('enatega-language')
+    const lang = await AsyncStorage.getItem('enatega-language')
     console.log(lang)
     setLoader(false)
   }

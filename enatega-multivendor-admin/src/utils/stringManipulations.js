@@ -4,9 +4,9 @@
  * return: String
  */
 const transformToNewline = (input, spaces = 3) => {
-  var spaceCount = 0
-  var result = []
-  var splittedDesc = input.split('')
+  const spaceCount = 0
+  const result = []
+  let splittedDesc = input.split('')
   for (let i = 0; i < splittedDesc.length; i++) {
     result.push(splittedDesc[i])
     if (splittedDesc[i] === ' ') {
